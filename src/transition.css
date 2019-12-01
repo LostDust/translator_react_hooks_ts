@@ -1,0 +1,29 @@
+.fade-enter,
+.fade-appear {
+  /* opacity: 0; */
+  transform: translateX(2000px);
+}
+.fade-enter-active,
+.fade-appear-active {
+  /* opacity: 1; */
+  transition: all 0.4s ease;
+  transform: translateX(0);
+}
+.fade-enter-done {
+  /* opacity: 1; */
+  transform: translateX(0);
+}
+
+.fade-exit {
+  /* opacity: 1; */
+  transform: translateX(0);
+}
+.fade-exit-active {
+  /* opacity: 0; */
+  transform: translateX(-2000px);
+  transition: all 0.4s ease;
+}
+.fade-exit-done {
+  /* opacity: 0; */
+  transform: translateX(-2000px);
+}
